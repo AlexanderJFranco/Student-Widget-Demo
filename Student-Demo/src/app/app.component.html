@@ -1,0 +1,28 @@
+
+<div class="topnav">
+  <a class="active" href="#home">Submissions</a>
+  <a href="http://localhost:3000/people">Database Overview</a>
+
+</div>
+
+<div>
+  <app-input-widget></app-input-widget>
+<br><br>
+<div class="center">
+<h1>Student</h1>
+</div>
+<table class='table'>
+
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of people;">
+      <td>{{person.firstname}}</td>
+      <td>{{person.lastname}}</td>
+    </tr>
+  </tbody>
+</table>
